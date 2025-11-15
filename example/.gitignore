@@ -1,0 +1,17 @@
+# Terraform files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+crash.log
+crash.*.log
+
+# Kubeconfig files
+*-config
+*.kubeconfig
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "Yuriy Yarosh <yuriy@yarosh.dev>"
+  ],
+  "description": "Sumicare OpenTofu Provider Kind",
+  "engines": {
+    "node": ">=25"
+  },
+  "name": "@sumicare/opentofu-provider-kind",
+  "packageManager": "yarn@4.10.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "go build -ldflags=\"-X 'main.version=$(jq -r .version package.json)'\"",
+    "lint": "golangci-lint run -c ./../../../.golangci.yml --fix",
+    "test": "ginkgo -v --timeout=20m --output-interceptor-mode=none --cover --coverprofile=coverage.out ./kind",
+    "test:integration": "TF_ACC=1 ginkgo -v --timeout=20m --output-interceptor-mode=none --cover --coverprofile=coverage.out ./kind"
+  },
+  "type": "module",
+  "version": "1.1.0"
+}
