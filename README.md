@@ -112,6 +112,10 @@ yarn test
 yarn test:integration
 ```
 
-### License
+## License
 
-Sumicare OpenTofu Provider Kind is licensed under the terms of [Apache License 2.0](LICENSE) as the original [tehcyx/terraform-provider-kind](https://github.com/tehcyx/terraform-provider-kind)
+Copyright 2025 **[Sumicare](https://sumi.care)**
+
+Sumicare OpenTofu Provider Kind is licensed under the terms of [Apache License 2.0](LICENSE).
+
+The **[Political Statement](POLITICAL_STATEMENT.md)** outlines the maintainer’s principles and project policies, it does not modify or supersede the Apache License 2.0 terms.
